@@ -1,0 +1,33 @@
+create database employeedetail
+use employeedetail
+create table deatails(id int identity,name varchar(20),salary int,age int,dept_no int)
+insert into deatails values
+('ram',15000,23,30),
+('sohan',20000,26,50),
+('ayushi',30000,22,35),
+('jyoti',42000,28,20),
+('harsh',34000,25,60)
+
+
+select*from deatails
+
+
+select salary/12 from deatails
+
+select*from deatails where dept_no=20 or dept_no=60
+
+select*from deatails where dept_no=30 and salary > 1500
+
+ select*from deatails where name ='ayushi' or name='ram' or name='sohan'
+
+ select*from deatails where name like 'a_____'
+
+ select*from deatails where name not like '%r'
+
+ select salary from deatails where dept_no=30
+
+ select salary+salary*10/100 as total_salary_with_comm from deatails 
+
+ select salary from deatails where salary<3000
+
+ select salary from deatails where salary>3000 
